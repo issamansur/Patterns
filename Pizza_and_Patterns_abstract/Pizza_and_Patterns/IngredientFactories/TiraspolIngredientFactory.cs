@@ -2,7 +2,7 @@
 
 namespace Fabric_and_Patterns
 {
-    class TiraspolIngredient : IPizzaIngredientFactory
+    class TiraspolIngredientFactory : IPizzaIngredientFactory
     {
         public string Name { get; set; }
      
