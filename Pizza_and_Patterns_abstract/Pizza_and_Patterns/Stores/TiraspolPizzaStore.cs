@@ -8,7 +8,7 @@ namespace Fabric_and_Patterns
         {
             Pizza pizza;
             IPizzaIngredientFactory ingredientFactory
-                = new BenderIngredientFactory();
+                = new TiraspolIngredientFactory();
 
             type.ToLower();
             switch (type)
