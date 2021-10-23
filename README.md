@@ -13,3 +13,5 @@
 ![изображение](https://user-images.githubusercontent.com/77580844/136756050-8595942e-ac28-47ed-961c-eb299901d6a1.png)
 ### 4.2 Absract fabric
 no image
+## 5 Singleton
+no image
