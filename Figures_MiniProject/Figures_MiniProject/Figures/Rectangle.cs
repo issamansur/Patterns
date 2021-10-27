@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Figures
 {
-    class Rectangle : IFigures
+    class Rectangle : Figure
     {
         public double Side1 { get; }
         public double Side2 { get; }
@@ -26,7 +26,7 @@ namespace Figures
                 this.Side2 = 1;
             }
         }
-        public string Type()
+        public override string Type()
         {
             if (Side1 == Side2)
                 return "Figures: Квадрат";
@@ -34,12 +34,12 @@ namespace Figures
                 return "Figures: Прямоугольник";
         }
 
-        public double Perimetr()
+        public override double Perimetr()
         {
             return (Side1 + Side2) * 2;
         }
 
-        public double Square()
+        public override double Square()
         {
             return Side1 * Side2;
         }

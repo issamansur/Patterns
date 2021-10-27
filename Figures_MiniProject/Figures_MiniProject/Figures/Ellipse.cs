@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Figures
 {
-    class Ellipse : IFigures
+    class Ellipse : Figure
     {
         public double Radius1 { get; }
         public double Radius2 { get; }
@@ -27,7 +27,7 @@ namespace Figures
                 this.Radius2 = 1;
             }
         }
-        public string Type()
+        public override string Type()
         {
             if (Radius1*Radius2 == 0)
                 return "Figures: Точка";
@@ -37,7 +37,7 @@ namespace Figures
                 return "Figures: Эллипс";
         }
 
-        public double Perimetr()
+        public override double Perimetr()
         {
             double up = Math.PI * Radius1 * Radius2 + Math.Pow((Math.Max(Radius1, Radius2) - Math.Min(Radius1, Radius2)), 2);
             double down = Radius1 + Radius2;
@@ -45,7 +45,7 @@ namespace Figures
             return 4*(up/down);
         }
 
-        public double Square()
+        public override double Square()
         {
             return Math.PI*Radius1 * Radius2;
         }

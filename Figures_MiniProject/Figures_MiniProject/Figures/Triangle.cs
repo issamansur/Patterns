@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Figures
 {
-    class Triangle : IFigures
+    class Triangle : Figure
     {
         public double Side1 { get; }
         public double Side2 { get; }
@@ -38,7 +38,7 @@ namespace Figures
                 this.Side3 = 1;
             }
         }
-        public string Type()
+        public override string Type()
         {
             if (Side1 == Side2 && Side1 == Side3)
             {
@@ -54,12 +54,12 @@ namespace Figures
             }
         }
 
-        public double Perimetr()
+        public override double Perimetr()
         {
             return (Side1 + Side2 + Side3);
         }
 
-        public double Square()
+        public override double Square()
         {
             double p = (Side1 + Side2 + Side3) / 2;
             return Math.Sqrt(p*(p-Side1)*(p-Side2)*(p-Side3));

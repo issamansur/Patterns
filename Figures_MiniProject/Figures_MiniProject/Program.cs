@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Figures
 {
@@ -6,13 +7,30 @@ namespace Figures
     {
         static void Main()
         {
-            Rectangle a = new Rectangle(1, 1);
-            Console.WriteLine(a.Perimetr().ToString() + a.Square().ToString() + a.Type().ToString());
-            Triangle b = new Triangle(1, 1, 2);
-            Console.WriteLine(b.Perimetr().ToString() + b.Square().ToString() + b.Type().ToString());
-            Ellipse c = new Ellipse(1, 2);
-            Console.WriteLine(c.Perimetr().ToString() + c.Square().ToString() + c.Type().ToString());
+            Random rand = new Random();
 
+            Figures figures = new Figures();
+
+            for (int i = 1; i <=5; i++)
+            {
+                int p1, p2, p3;
+                p1 = rand.Next(3) + 1;
+                p2 = rand.Next(3) + 1;
+                p3 = rand.Next(3) + 1;
+
+                Figure a = new Rectangle(p1, p2);
+                Figure b = new Triangle(p1, p2, p3);
+                Figure c = new Ellipse(p1, p2);
+
+                figures.Add(a);
+                figures.Add(b);
+                figures.Add(c);
+            }
+
+            foreach (Figure x in Figures)
+            {
+                Console.WriteLine(x.Type());
+            }
         }
     }
 }
