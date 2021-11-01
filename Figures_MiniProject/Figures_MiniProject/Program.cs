@@ -27,7 +27,7 @@ namespace Figures
                 figures.Add(c);
             }
 
-            foreach (Figure x in Figures)
+            foreach (Figure x in figures)
             {
                 Console.WriteLine(x.Type());
             }

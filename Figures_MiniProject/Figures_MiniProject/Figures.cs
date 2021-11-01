@@ -5,30 +5,18 @@ using System.Text;
 
 namespace Figures
 {
-    class Figures
+    class Figures : IEnumerable
     {
         List<Figure> figures = new List<Figure>();
 
-        public Enumerator GetEnumerator()
+        public IEnumerator GetEnumerator()
         {
-            return new Enumerator();
+            return figures.GetEnumerator();
         }
 
         public void Add(Figure figure)
         {
             figures.Add(figure);
-        }
-    }
-    public class Enumerator
-    {
-        public bool MoveNext()
-        {
-            return false;
-        }
-
-        public Figure Current
-        {
-            get { return null; }
         }
     }
 }
