@@ -17,5 +17,13 @@ namespace Command_and_patterns
         {
             garageDoor.Down();
         }
+
+        public void Undo()
+        {
+            if (garageDoor.Prev == "Open")
+                garageDoor.Up();
+            else if (garageDoor.Prev == "Stop")
+                garageDoor.Stop();
+        }
     }
 }

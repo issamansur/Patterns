@@ -8,6 +8,7 @@ namespace Command_and_patterns
     {
         public ICommand[] onCommands;
         public ICommand[] offCommands;
+        public ICommand undoCommand;
 
         public RemoteControl() {
             onCommands = new ICommand[7];
@@ -18,6 +19,7 @@ namespace Command_and_patterns
             {
                 onCommands[i] = offCommands[i] = noCommand;
             }
+            undoCommand = noCommand;
         }
 
         public void SetCommand(int slot, ICommand onCommand, ICommand offCommand)
@@ -29,11 +31,18 @@ namespace Command_and_patterns
         public void OnButtonWasPressed(int slot)
         {
             onCommands[slot].Execute();
+            undoCommand = onCommands[slot];
         }
 
         public void OffButtonWasPressed(int slot)
         {
             offCommands[slot].Execute();
+            undoCommand = offCommands[slot];
+        }
+
+        public void UndoButtonWasPressed(int slot)
+        {
+            undoCommand.Undo();
         }
 
         public override string ToString()
