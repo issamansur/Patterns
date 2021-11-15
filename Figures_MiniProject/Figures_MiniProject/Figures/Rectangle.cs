@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Figures
 {
-    class Rectangle : Figure
+    public class Rectangle : Figure
     {
         public double Side1 { get; }
         public double Side2 { get; }
@@ -26,12 +26,13 @@ namespace Figures
                 this.Side2 = 1;
             }
         }
+
         public override string Type()
         {
             if (Side1 == Side2)
-                return "Figures: Квадрат";
+                return "Квадрат";
             else
-                return "Figures: Прямоугольник";
+                return "Прямоугольник";
         }
 
         public override double Perimetr()
@@ -42,6 +43,30 @@ namespace Figures
         public override double Square()
         {
             return Side1 * Side2;
+        }
+
+
+        public override bool Equals(Object obj)
+        {
+            Rectangle o = (Rectangle)obj;
+            if (obj == null || !(obj is Rectangle))
+                return false;
+            else
+                return
+                    (Type() == o.Type()
+                    && Side1 == o.Side1
+                    && Side2 == o.Side2 
+                    && Perimetr() == o.Perimetr()
+                    && Square() == o.Square());
+        }
+
+        public override int GetHashCode()
+        {
+            int hashCode = (int)Math.Ceiling(
+                Side1 * Side2 * (Side1 + Side2) *
+                Perimetr() * Square() * (Perimetr() + Square())
+                );
+            return (hashCode);
         }
     }
 }

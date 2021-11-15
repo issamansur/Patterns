@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Figures
 {
-    class Ellipse : Figure
+    public class Ellipse : Figure
     {
         public double Radius1 { get; }
         public double Radius2 { get; }
@@ -30,11 +30,11 @@ namespace Figures
         public override string Type()
         {
             if (Radius1*Radius2 == 0)
-                return "Figures: Точка";
+                return "Точка";
             else if (Radius1 == Radius2)
-                return "Figures: Круг";
+                return "Круг";
             else
-                return "Figures: Эллипс";
+                return "Эллипс";
         }
 
         public override double Perimetr()
@@ -48,6 +48,30 @@ namespace Figures
         public override double Square()
         {
             return Math.PI*Radius1 * Radius2;
+        }
+
+
+        public override bool Equals(Object obj)
+        {
+            Ellipse o = (Ellipse)obj;
+            if (obj == null || !(obj is Ellipse))
+                return false;
+            else
+                return
+                    (Type() == o.Type() 
+                    && Radius1 == o.Radius1
+                    && Radius2 == o.Radius2
+                    && Perimetr() == o.Perimetr()
+                    && Square() == o.Square());
+        }
+
+        public override int GetHashCode()
+        {
+            int hashCode = (int)Math.Ceiling(
+                Radius1 * Radius2 * (Radius1 + Radius2) *
+                Perimetr() * Square() * (Perimetr() + Square())
+                );
+            return (hashCode);
         }
     }
 }
