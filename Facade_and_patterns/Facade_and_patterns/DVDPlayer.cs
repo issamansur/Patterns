@@ -14,7 +14,7 @@ namespace Facade_and_patterns
         public void Play(string movie)
         {
             this.Film = movie;
-            Console.WriteLine($"Фильм {Film} теперь воспроизводство");
+            Console.WriteLine($"Фильм {Film} теперь воспроизводится");
         }
 
         public void Pause()
