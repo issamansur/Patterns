@@ -6,7 +6,11 @@ namespace PatternMethod_and_patterns
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Tea tea = new Tea();
+            tea.PrepareRecipe();
+
+            Coffee coffee = new Coffee();
+            coffee.PrepareRecipe();
         }
     }
 }
