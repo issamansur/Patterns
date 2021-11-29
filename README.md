@@ -30,8 +30,29 @@
 
 ![изображение](https://user-images.githubusercontent.com/77580844/136756050-8595942e-ac28-47ed-961c-eb299901d6a1.png)
 
-
 ## 5 Singleton
+![изображение](https://user-images.githubusercontent.com/77580844/143927717-763f1171-22bd-4247-adef-626d180e4896.png)
+
+no image
+
+## 6 Command / TEam!?
+![изображение](https://user-images.githubusercontent.com/77580844/143927987-8dc5ecdb-ba05-4cff-95e2-d5406fc75806.png)
+
+no image
+
+## 7 Adapter
+![изображение](https://user-images.githubusercontent.com/77580844/143928245-c2832dff-0d80-4aa6-a7f5-1c6021c3516d.png)
+
+no image
+
+## 8 Facade
+![изображение](https://user-images.githubusercontent.com/77580844/143928433-8a998482-176e-4f4e-b6b1-2216dab63c9d.png)
+
+no image
+
+## 8 Pattern method
+![изображение](https://user-images.githubusercontent.com/77580844/143928586-35b29557-f0b7-469d-b917-27c629d3f7f8.png)
+
 no image
 
 # Принципы проектирования
@@ -47,3 +68,6 @@ no image
 
 ![изображение](https://user-images.githubusercontent.com/77580844/143926987-0a2221c9-f6d5-42b7-8332-d16e3f1561e8.png)
 
+![изображение](https://user-images.githubusercontent.com/77580844/143928491-4b23c027-6bb6-419e-83c3-0e264c419dac.png)
+
+![изображение](https://user-images.githubusercontent.com/77580844/143928698-2270d98d-784a-4e8b-97c1-baa1e020e927.png)
