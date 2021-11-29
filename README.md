@@ -1,5 +1,7 @@
 # Patterns
 ## 1. Ducks_and_patterns
+![изображение](https://user-images.githubusercontent.com/77580844/143924442-fceafb63-5b94-4004-b37f-304d1818552c.png)
+
 ![изображение](https://user-images.githubusercontent.com/77580844/136754894-8a52934c-b782-42ac-b301-7842fcc68304.png)
 
 ## 2. Weatherdata_and_patterns
@@ -15,3 +17,8 @@
 no image
 ## 5 Singleton
 no image
+
+# Принципы проектирования
+![изображение](https://user-images.githubusercontent.com/77580844/143923450-a238ae58-7978-40c1-aeac-632d5d9c132f.png)
+![изображение](https://user-images.githubusercontent.com/77580844/143923838-bedada91-ee01-4aff-87ec-6463c92d2826.png)
+![изображение](https://user-images.githubusercontent.com/77580844/143924180-2d6bc2d8-7ebb-4055-8c1b-b74916242ff5.png)
