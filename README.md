@@ -35,7 +35,7 @@
 
 no image
 
-## 6 Command / TEam!?
+## 6 Command / Team!?
 ![изображение](https://user-images.githubusercontent.com/77580844/143927987-8dc5ecdb-ba05-4cff-95e2-d5406fc75806.png)
 
 no image
@@ -43,7 +43,7 @@ no image
 ## 7 Adapter
 ![изображение](https://user-images.githubusercontent.com/77580844/143928245-c2832dff-0d80-4aa6-a7f5-1c6021c3516d.png)
 
-no image
+![изображение](https://user-images.githubusercontent.com/77580844/144640719-278b0806-ddb9-4690-8c7c-1260ecbd9c19.png)
 
 ## 8 Facade
 ![изображение](https://user-images.githubusercontent.com/77580844/143928433-8a998482-176e-4f4e-b6b1-2216dab63c9d.png)
