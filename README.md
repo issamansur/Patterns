@@ -33,12 +33,12 @@
 ## 5 Singleton
 ![изображение](https://user-images.githubusercontent.com/77580844/143927717-763f1171-22bd-4247-adef-626d180e4896.png)
 
-no image
+![изображение](https://user-images.githubusercontent.com/77580844/144643511-11ee2c18-5b1d-4605-95bd-a41755fad9fa.png)
 
 ## 6 Command / Team!?
 ![изображение](https://user-images.githubusercontent.com/77580844/143927987-8dc5ecdb-ba05-4cff-95e2-d5406fc75806.png)
 
-no image
+![изображение](https://user-images.githubusercontent.com/77580844/144643338-737bd5ae-37e4-4357-8de8-aae0627d7fb7.png)
 
 ## 7 Adapter
 ![изображение](https://user-images.githubusercontent.com/77580844/143928245-c2832dff-0d80-4aa6-a7f5-1c6021c3516d.png)
@@ -48,12 +48,12 @@ no image
 ## 8 Facade
 ![изображение](https://user-images.githubusercontent.com/77580844/143928433-8a998482-176e-4f4e-b6b1-2216dab63c9d.png)
 
-no image
+![изображение](https://user-images.githubusercontent.com/77580844/144643186-34eedba3-07e6-4f87-a5d4-336a647d2963.png)
 
 ## 9 Pattern method
 ![изображение](https://user-images.githubusercontent.com/77580844/143928586-35b29557-f0b7-469d-b917-27c629d3f7f8.png)
 
-no image
+![изображение](https://user-images.githubusercontent.com/77580844/144643055-ed324b1b-3785-4d7e-9c40-6b85d1dd5493.png)
 
 ## 10 Iterator (+ Component)
 ### 10.1 Iterator
