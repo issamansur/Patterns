@@ -50,10 +50,22 @@ no image
 
 no image
 
-## 8 Pattern method
+## 9 Pattern method
 ![изображение](https://user-images.githubusercontent.com/77580844/143928586-35b29557-f0b7-469d-b917-27c629d3f7f8.png)
 
 no image
+
+## 10 Iterator (+ Component)
+### 10.1 Iterator
+![изображение](https://user-images.githubusercontent.com/77580844/144641491-f3d3b9dd-d283-43dc-ae9d-00f812accb33.png)
+
+![изображение](https://user-images.githubusercontent.com/77580844/144641696-f25db998-f19b-4817-8690-8744a422a4db.png)
+
+### 10.2 Component
+![изображение](https://user-images.githubusercontent.com/77580844/144642066-50eb6394-2440-45c0-beaa-0638eecfcb3c.png)
+
+![изображение](https://user-images.githubusercontent.com/77580844/144642162-6c255cf7-4498-4b70-b346-41b85ee58d48.png)
+
 
 # Принципы проектирования
 ![изображение](https://user-images.githubusercontent.com/77580844/143923450-a238ae58-7978-40c1-aeac-632d5d9c132f.png)
@@ -71,3 +83,6 @@ no image
 ![изображение](https://user-images.githubusercontent.com/77580844/143928491-4b23c027-6bb6-419e-83c3-0e264c419dac.png)
 
 ![изображение](https://user-images.githubusercontent.com/77580844/143928698-2270d98d-784a-4e8b-97c1-baa1e020e927.png)
+
+![изображение](https://user-images.githubusercontent.com/77580844/144641777-6340a7bc-a414-4da8-a752-ea5b2c293595.png)
+
