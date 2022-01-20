@@ -76,6 +76,8 @@
 
 ![изображение](https://user-images.githubusercontent.com/77580844/143924180-2d6bc2d8-7ebb-4055-8c1b-b74916242ff5.png)
 
+![изображение](https://user-images.githubusercontent.com/77580844/150427310-3a5ce108-827c-49bb-ba02-71bf961150d5.png)
+
 ![изображение](https://user-images.githubusercontent.com/77580844/143925307-34226fc4-c616-446a-92e9-06c94bc1349b.png)
 
 ![изображение](https://user-images.githubusercontent.com/77580844/143925718-0547df61-1a71-4440-a7c0-576d8c48261c.png)
