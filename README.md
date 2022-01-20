@@ -1,4 +1,6 @@
 # Patterns
+![изображение](https://user-images.githubusercontent.com/77580844/150426228-c049d2a4-45c3-4d66-8c79-aba0f383507f.png)
+
 ## 1. Ducks_and_patterns
 ![изображение](https://user-images.githubusercontent.com/77580844/143924442-fceafb63-5b94-4004-b37f-304d1818552c.png)
 
