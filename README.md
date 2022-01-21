@@ -77,14 +77,16 @@
 
 ![изображение](https://user-images.githubusercontent.com/77580844/143924180-2d6bc2d8-7ebb-4055-8c1b-b74916242ff5.png)
 
-## Наблюдатель
 ![изображение](https://user-images.githubusercontent.com/77580844/150427310-3a5ce108-827c-49bb-ba02-71bf961150d5.png)
 
-## Декоратор
+## Наблюдатель
 ![изображение](https://user-images.githubusercontent.com/77580844/143925307-34226fc4-c616-446a-92e9-06c94bc1349b.png)
 
-## Фабричный метод/Фабрика
+## Декоратор
 ![изображение](https://user-images.githubusercontent.com/77580844/143925718-0547df61-1a71-4440-a7c0-576d8c48261c.png)
+
+## Фабричный метод/Фабрика
+![изображение](https://user-images.githubusercontent.com/77580844/143926987-0a2221c9-f6d5-42b7-8332-d16e3f1561e8.png)
 
 ## Одиночка
 -
@@ -96,13 +98,11 @@
 -
 
 ## Фасад
-![изображение](https://user-images.githubusercontent.com/77580844/143926987-0a2221c9-f6d5-42b7-8332-d16e3f1561e8.png)
-
-## Шаблонный метод
 ![изображение](https://user-images.githubusercontent.com/77580844/143928491-4b23c027-6bb6-419e-83c3-0e264c419dac.png)
 
-## Итератор
+## Шаблонный метод
 ![изображение](https://user-images.githubusercontent.com/77580844/143928698-2270d98d-784a-4e8b-97c1-baa1e020e927.png)
 
+## Итератор
 ![изображение](https://user-images.githubusercontent.com/77580844/144641777-6340a7bc-a414-4da8-a752-ea5b2c293595.png)
 
