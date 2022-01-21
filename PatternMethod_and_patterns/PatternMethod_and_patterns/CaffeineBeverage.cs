@@ -11,7 +11,8 @@ namespace PatternMethod_and_patterns
             BoilWater();
             Brew();
             PourInCup();
-            AddCondiments();
+            if (NeedsCondiments())
+                AddCondiments();
         }
 
         public void BoilWater()
@@ -27,5 +28,10 @@ namespace PatternMethod_and_patterns
         }
 
         public abstract void AddCondiments();
+
+        public virtual bool NeedsCondiments()
+        {
+            return true;
+        }
     }
 }
