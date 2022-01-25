@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Iterator_Component_and_patterns
 {
-    public class PancakeHouseMenu
+    public class PancakeHouseMenu : IMenu
     {
-        List<MenuItem> menuItems;
+        readonly List<MenuItem> menuItems;
 
         public PancakeHouseMenu()
         {
@@ -34,7 +34,7 @@ namespace Iterator_Component_and_patterns
             MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
             menuItems.Add(menuItem);
         }
-        public IIterator CreateIterator()
+        public IIterator<MenuItem> CreateIterator()
         {
             return new PancakeHouseMenuIterator(menuItems);
         }

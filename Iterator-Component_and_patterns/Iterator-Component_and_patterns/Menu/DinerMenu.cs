@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Iterator_Component_and_patterns
 {
-    public class DinerMenu
+    public class DinerMenu : IMenu
     {
         const int MAX_ITEMS = 6;
         int numberOfItems = 0;
-        MenuItem[] menuItems;
+        readonly MenuItem[] menuItems;
 
         public DinerMenu()
         {
@@ -41,7 +41,7 @@ namespace Iterator_Component_and_patterns
             }
         }
 
-        public Iterator createIterator()
+        public IIterator<MenuItem> CreateIterator()
         {
             return new DinerMenuIterator(menuItems);
         }

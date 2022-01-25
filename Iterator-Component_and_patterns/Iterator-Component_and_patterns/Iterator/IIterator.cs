@@ -4,9 +4,10 @@ using System.Text;
 
 namespace Iterator_Component_and_patterns
 {
-    public interface IIterator
+    public interface IIterator<Obj> where Obj : MenuItem
     {
-        Object Next();
+        Obj Next();
         bool HasNext();
+        void Remove();
     }
 }
