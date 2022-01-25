@@ -61,7 +61,7 @@
 ### 10.1 Iterator
 ![изображение](https://user-images.githubusercontent.com/77580844/144641491-f3d3b9dd-d283-43dc-ae9d-00f812accb33.png)
 
-![изображение](https://user-images.githubusercontent.com/77580844/144641696-f25db998-f19b-4817-8690-8744a422a4db.png)
+![изображение](https://user-images.githubusercontent.com/77580844/150971008-60cdc90e-a04e-4ac7-be93-6419bf414501.png)
 
 ### 10.2 Component
 ![изображение](https://user-images.githubusercontent.com/77580844/144642066-50eb6394-2440-45c0-beaa-0638eecfcb3c.png)
