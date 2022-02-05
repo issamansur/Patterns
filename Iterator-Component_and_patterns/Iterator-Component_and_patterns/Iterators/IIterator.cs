@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Iterator_Component_and_patterns
 {
-    public interface IIterator<Obj> where Obj : MenuItem
+    public interface IIterator<Obj>
     {
         Obj Next();
         bool HasNext();

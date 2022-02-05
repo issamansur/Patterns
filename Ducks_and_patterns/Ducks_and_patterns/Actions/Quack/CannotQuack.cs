@@ -2,7 +2,6 @@
 
 namespace Ducks_and_patterns.Actions.Quack
 {
-
     class CannotQuack : IQuackBehaviour
     {
         public void Quack()

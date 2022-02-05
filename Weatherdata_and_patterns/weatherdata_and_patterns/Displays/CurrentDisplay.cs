@@ -11,13 +11,13 @@ namespace weatherstation_and_patterns.Displays
         private float humidity;
         private float pressure;
         // list of subscibers of updating indicators (our displays)
-        private IPublisher sub_list;
+        public IPublisher Sub_list { get; private set; }
 
         // constructor for CD adding itself (display)
         // to list of subscribers (AUTOMATICALLY)
         public CurrentDisplay(IPublisher sub_list)
         {
-            this.sub_list = sub_list;
+            Sub_list = sub_list;
             sub_list.AddSubscriber(this);
         }
 

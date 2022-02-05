@@ -23,6 +23,11 @@ namespace Starbuzz_and_patterns
             beverage_2 = new Soy(beverage_2);
             Console.WriteLine(beverage_2.GetDescription());
             Console.WriteLine(beverage_2.Cost() + "$");
+
+            Beverage xaarxyx = new Viski();
+            xaarxyx = new Cola(xaarxyx);
+            Console.WriteLine(xaarxyx.GetDescription());
+            Console.WriteLine(xaarxyx.Cost() + "$");
         }
     }
 }

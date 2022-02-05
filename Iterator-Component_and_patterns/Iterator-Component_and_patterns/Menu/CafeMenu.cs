@@ -6,10 +6,11 @@ namespace Iterator_Component_and_patterns
 {
     public class CafeMenu : IMenu
     {
-        readonly Dictionary<string, MenuItem> menuItems = new Dictionary<string, MenuItem>();
+        public Dictionary<string, MenuItem> menuItems { get; private set; }
         
         public CafeMenu()
         {
+            menuItems = new Dictionary<string, MenuItem>();
             AddItem("Veggie Burger and Air Fries",
             "Veggie burger on a whole wheat bun, lettuce, tomato, and fries",
             true, 3.99);

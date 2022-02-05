@@ -1,30 +1,29 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Iterator_Component_and_patterns
 {
-    public class PancakeHouseMenuIterator : IIterator<MenuItem>
+    class DinerMenuIterator : IIterator<MenuItem>
     {
-        readonly List<MenuItem> list;
+        public MenuItem[] List { get; private set; }
         private int position = 0;
 
-        public PancakeHouseMenuIterator(List<MenuItem> list)
+        public DinerMenuIterator(MenuItem[] list)
         {
-            this.list = list;
+            this.List = list;
         }
 
         public MenuItem Next()
         {
-            MenuItem menuItem = list[position];
+            MenuItem menuItem = List[position];
             position += 1;
             return menuItem;
         }
 
         public bool HasNext()
         {
-            return !(position >= list.Count || list[position] == null);
+            return !(position >= List.Length || List[position] == null);
         }
 
         public void Remove()
@@ -34,9 +33,13 @@ namespace Iterator_Component_and_patterns
                 throw new IndexOutOfRangeException
                 ("You can’t remove an item until you’ve done at least one next()");
             }
-            if (list[position - 1] != null)
+            if (List[position - 1] != null)
             {
-                list.RemoveAt(position - 1);
+                for (int i = position - 1; i < (List.Length - 1); i++)
+                {
+                    List[i] = List[i + 1];
+                }
+                List[List.Length - 1] = null;
             }
         }
     }

@@ -6,13 +6,13 @@ namespace Iterator_Component_and_patterns
 {
     public class DinerMenu : IMenu
     {
-        const int MAX_ITEMS = 6;
-        int numberOfItems = 0;
-        readonly MenuItem[] menuItems;
+        private const int MAX_ITEMS = 6;
+        private int numberOfItems = 0;
+        public MenuItem[] MenuItems { get; private set; }
 
         public DinerMenu()
         {
-            menuItems = new MenuItem[MAX_ITEMS];
+            MenuItems = new MenuItem[MAX_ITEMS];
             AddItem("Vegetarian BLT",
             "(Fakin’) Bacon with lettuce & tomato on whole wheat", true, 2.99);
             AddItem("BLT",
@@ -36,14 +36,14 @@ namespace Iterator_Component_and_patterns
             }
             else
             {
-                menuItems[numberOfItems] = menuItem;
+                MenuItems[numberOfItems] = menuItem;
                 numberOfItems += 1;
             }
         }
 
         public IIterator<MenuItem> CreateIterator()
         {
-            return new DinerMenuIterator(menuItems);
+            return new DinerMenuIterator(MenuItems);
         }
     }
 }

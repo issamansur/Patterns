@@ -6,11 +6,11 @@ namespace Iterator_Component_and_patterns
 {
     public class PancakeHouseMenu : IMenu
     {
-        readonly List<MenuItem> menuItems;
+        public List<MenuItem> MenuItems { get; private set; }
 
         public PancakeHouseMenu()
         {
-            menuItems = new List<MenuItem>();
+            MenuItems = new List<MenuItem>();
             AddItem("K & B’s Pancake Breakfast",
             "Pancakes with scrambled eggs, and toast",
             true,
@@ -28,15 +28,15 @@ namespace Iterator_Component_and_patterns
             true,
             3.59);
         }
-        public void AddItem(String name, String description,
+        public void AddItem(string name, string description,
         bool vegetarian, double price)
         {
             MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
-            menuItems.Add(menuItem);
+            MenuItems.Add(menuItem);
         }
         public IIterator<MenuItem> CreateIterator()
         {
-            return new PancakeHouseMenuIterator(menuItems);
+            return new PancakeHouseMenuIterator(MenuItems);
         }
     }
 }

@@ -6,29 +6,26 @@ namespace Iterator_Component_and_patterns
 {
     public class Waitress
     {
-        readonly IMenu pancakeHouseMenu;
-        readonly IMenu dinerMenu;
-        readonly IMenu cafeMenu;
-
-        public Waitress(IMenu pancakeHouseMenu, 
-            IMenu dinerMenu, IMenu cafeMenu)
+        public IMenu PancakeHouseMenu { get; private set; }
+        public IMenu DinerMenu { get; private set; }
+        public IMenu CafeMenu { get; private set; }
+        public Waitress(IMenu pancakeHouseMenu, IMenu dinerMenu, IMenu cafeMenu)
         {
-            this.pancakeHouseMenu = pancakeHouseMenu;
-            this.dinerMenu = dinerMenu;
-            this.cafeMenu = cafeMenu;
+            PancakeHouseMenu = pancakeHouseMenu;
+            DinerMenu = dinerMenu;
+            CafeMenu = cafeMenu;
         }
 
-        public void PrintMenu()
+        public void PrintMenu1()
         {
-            IIterator<MenuItem> pancakeIterator = pancakeHouseMenu.CreateIterator();
-            IIterator<MenuItem> dinerIterator = dinerMenu.CreateIterator();
-            IIterator<MenuItem> cafeIterator = cafeMenu.CreateIterator();
-
-            Console.Write("MENU\n----\nBREAKFAST\n");
+            IIterator<MenuItem> pancakeIterator = PancakeHouseMenu.CreateIterator();
+            IIterator<MenuItem> dinerIterator = DinerMenu.CreateIterator();
+            IIterator<MenuItem> cafeIterator = CafeMenu.CreateIterator();
+            Console.WriteLine("MENU\n----\nBREAKFAST");
             PrintMenu(pancakeIterator);
-            Console.Write("\nLUNCH\n");
+            Console.WriteLine("\nLUNCH");
             PrintMenu(dinerIterator);
-            Console.Write("\nDINNER\n");
+            Console.WriteLine("\nDINNER");
             PrintMenu(cafeIterator);
         }
 
@@ -37,9 +34,41 @@ namespace Iterator_Component_and_patterns
             while (iterator.HasNext())
             {
                 MenuItem menuItem = iterator.Next();
-                Console.WriteLine(menuItem.GetName() + ", ");
+                Console.Write(menuItem.GetName() + ", ");
                 Console.Write(menuItem.GetPrice() + " -- ");
                 Console.WriteLine(menuItem.GetDescription());
+            }
+        }
+
+        public MenuComponent AllMenus { get; private set; }
+        public Waitress(MenuComponent allMenus)
+        {
+            AllMenus = allMenus;
+        }
+
+
+        public void PrintMenu()
+        {
+            AllMenus.Print();
+        }
+
+        public void PrintVegetarianMenu()
+        {
+            IEnumerator<MenuComponent> iterator = AllMenus.CreateIterator();
+            Console.WriteLine("\nVEGETARIAN MENU\n----");
+            while (iterator.MoveNext())
+            {
+                MenuComponent menuComponent = iterator.Current;
+                try
+                {
+                    if (menuComponent.IsVegetarian())
+                    {
+                        menuComponent.Print();
+                    }
+                }
+                catch (InvalidOperationException e) {
+                    Console.WriteLine(e.Message);
+                }
             }
         }
     }
